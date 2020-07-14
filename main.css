@@ -188,7 +188,7 @@ a:hover {
     }
     
     header {
-        height: 100px;
+        height: auto;
     }
     
     h1 {
