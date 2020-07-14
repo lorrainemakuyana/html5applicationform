@@ -1,0 +1,239 @@
+body {
+    margin: 0; 
+}
+
+p {
+    margin: 0; 
+}
+
+header { 
+    margin: 0 auto; 
+    height: 100px; 
+    background-color: rgb(13, 13, 69); 
+}
+
+h1 {
+    margin: 0 auto; 
+    width: 55%; 
+    padding-top: 25px; 
+    color: rgb(255, 255, 255); 
+    font-size: 40px;  
+}
+    
+main {
+    width: 55%; 
+    margin: 0 auto; 
+    height: auto;
+    background-color: rgb(255, 255, 255); 
+    padding: 0px 30px;
+}
+
+input {
+    height: 25px;
+    background-color: rgb(248, 246, 246); 
+    border: none;
+}
+input:hover, textarea:hover {
+    border: 1px solid rgb(13, 13, 69);
+}
+
+textarea {
+    background-color: rgb(248, 246, 246); 
+    border: none;
+}
+
+.specialization {
+    line-height: 1.5em;
+    margin: 20px 0px;
+}
+.specialization input { 
+    height: 15px;  
+}
+.specialization input:hover {
+    border: 1px solid rgb(0, 0, 255);
+}
+
+.personal-details, .address {
+    height: auto; 
+    line-height: 1.5em;
+}
+
+.personal-details .email input, .personal-details .github-link input, .address .street input{
+    width: 50%;    
+}
+
+.personal-details .names, .personal-details .phone-number, .address .location, .academics .degree, .business .job-info, .business .job-dates, .certification .namedate {
+    display: flex;
+    height: 60px; 
+}
+.personal-details .names div, .personal-details .phone-number div, .address .location div, .academics .degree div, .business .job-dates div {
+    width: 50%; 
+}
+.personal-details .github-link {
+    padding-bottom: 10px;
+}
+.personal-details .names input, .personal-details .phone-number input {
+    width: 200px;
+}
+
+.address .location input {
+    width: 200px;
+}
+
+.academics {
+    line-height: 2.5em;
+}
+.academics .degree {
+    line-height: 1.5em; 
+    margin-top: 5px;
+}
+.academics input {
+    width: 150px;
+}
+.academics textarea, .business .accomplishments textarea {
+    width: 50%; 
+    height: 150px;
+}
+
+.business {
+    line-height: 1.5em;
+}
+.business .skills textarea {
+    width: 30%;
+    height: 100px; 
+}
+.business .job-info div {
+    width: 50%;
+}
+.business .job-info input  {
+    width: 250px;    
+}
+
+.motivation {
+    line-height: 1.5em;
+}
+.motivation textarea {
+    width: 500px; 
+    height: 150px; 
+}
+
+.certification .namedate {
+    line-height: 1.5em;
+}
+.certification .namedate div {
+    width:  50%;
+}
+.certification .namedate input {
+    width: 250px;
+}
+.certification #certify {
+    line-height: 1.5em;
+}
+
+button {
+    padding: 15px; 
+    margin: 40px 0; 
+    background-color: rgb(13, 13, 69); 
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    font-size: 18px;
+    border: none; 
+}
+button:hover {
+    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 222); 
+    text-decoration: none; 
+}
+button:focus {
+    outline: none;
+}
+
+footer {
+    text-align: center; 
+    height: 100px; 
+    background-color: rgb(13, 13, 69); 
+    color: rgb(255, 255, 255); 
+}
+.attribution {
+    padding-top: 25px; 
+}
+
+a {
+    margin-top: 10px;
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+}
+a:hover {
+    color: rgb(0, 0, 255); 
+}
+
+#github {
+    display: block; 
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        width: 100%;
+    }
+        
+    main {
+        width: 90%; 
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    header {
+        height: 100px;
+    }
+    
+    h1 {
+        width: 100%; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+    
+    .personal-details .names, .personal-details .phone-number {
+        display: block;
+        height: 130px;; 
+    } 
+    
+    .address .location {
+        display: block; 
+        height: 100px;
+    }
+    
+    .academics .degree {
+        display: block; 
+        height: 110px; 
+    }
+    
+    .business .skills textarea {
+        width: 80%; 
+    }
+    
+    .business .job-info, .business .job-dates {
+        display: block;
+    }
+    
+    .business .job-info, .business .job-dates {
+        height: 120px;
+    }
+    
+    .business .accomplishments textarea {
+        width: 80%;
+    }
+    
+    .motivation .explain-motivation textarea {
+        width: 80%;
+    }
+    
+    .certification .namedate {
+        display: block; 
+        height: 120px; 
+    }
+}
