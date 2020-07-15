@@ -1,3 +1,3 @@
 # Sample Job Application Form
 
-Sample job application form I created using semantic HTML5 and CSS. 
+Sample job application form created using semantic HTML5 and CSS. 

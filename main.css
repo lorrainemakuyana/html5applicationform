@@ -90,6 +90,12 @@ textarea {
 .academics input {
     width: 150px;
 }
+.academics .degree .major input {
+    width: 250px; 
+}
+.academics .college input {
+    width: 250px; 
+}
 .academics textarea, .business .accomplishments textarea {
     width: 50%; 
     height: 150px;
@@ -193,7 +199,7 @@ a:hover {
     
     h1 {
         width: 100%; 
-        margin: 0 auto; 
+        padding: 10px 0;
         text-align: center; 
     }
     
@@ -212,7 +218,7 @@ a:hover {
         height: 110px; 
     }
     
-    .business .skills textarea {
+    .academics textarea, .business .skills textarea {
         width: 80%; 
     }
     
