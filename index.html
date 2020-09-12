@@ -15,14 +15,14 @@
         <h1>Job Application Form</h1>
     </header>
     <main>
-        <form validate action="">
+        <form validate action="" id="job-app">
             <section class="specialization">
                 <label><strong>Specialization of Interest</strong></label><br>
-                <input type="checkbox" id="back-end">
+                <input type="radio" id="back-end" name="specialization" value="backend">
                 <label for="back-end">Back End</label><br>
-                <input type="checkbox" id="front-end">
+                <input type="radio" id="front-end" name="specialization" value="frontend">
                 <label for="front-end">Front End</label><br>
-                <input type="checkbox" id="full-stack">
+                <input type="radio" id="full-stack" name="specialization" value="fullstack">
                 <label for="full-stack">Full Stack</label><br>
             </section>
 
@@ -30,53 +30,57 @@
                 <h2>Personal Details</h2>
                 <div class="email">
                     <label>Email Address</label><br>
-                    <input type="email" required><br><br>
+                    <input type="email" name="email-address" required><br><br>
                 </div>
                 <div class="names">
                     <div>
-                        <label>First Name</label><br>
-                        <input type="text" required>
+                        <label for="first">First Name</label><br>
+                        <input type="text" name="fname" id="first" required>
                         </div>
                     <div>
-                        <label>Last Name</label><br>
-                        <input type="text" required>
+                        <label for="last">Last Name</label><br>
+                        <input type="text" name="lname" id="last" required>
                     </div>
                 </div>
                 <div class="phone-number">
                     <div>
-                        <label>Phone Number</label><br>
-                        <input type="tel" required>
+                        <label for="telephone">Phone Number</label><br>
+                        <input type="tel" id="telephone" name="telephone" required>
                     </div>
                     <div>
                         <label>Gender</label><br>
-                        <input type="text" list="gender">
+                        <input type="text" list="gender" name="gender">
                         <datalist id="gender">
-                            <option>Female</option>
-                            <option>Male</option>
-                            <option>Rather not specify</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="not-specified">Rather not specify</option>
                         </datalist>
                     </div>
                 </div>
                 <div class="github-link">
-                    <label>Link to your GitHub Portfolio</label><br>
-                    <input type="url" required>
+                    <label for="github-link">Link to your GitHub Portfolio</label><br>
+                    <input type="url" id="github-link" name="git-link" required>
+                </div>
+                <div class="other-website">
+                    <label for="any-other-website">Link to any other website we should check out.</label><br>
+                    <input type="url" id="any-other-website" name="other-website">
                 </div>
             </section>
 
             <section class="address">
                 <h2>Home/Work Address</h2>
                 <div class="street">
-                    <label>Street Address</label><br>
-                    <input type="text" required><br>
+                    <label for="street">Street Address</label><br>
+                    <input id="street" type="text" required><br>
                 </div>
                 <div class="location">
                     <div>
-                        <label>City</label><br>
-                        <input type="text" required>
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" required>
                     </div>
                     <div>
-                        <label>Country</label><br>
-                        <input type="text" required>
+                        <label for="country">Country</label><br>
+                        <input type="text" id="country" required>
                     </div>
                 </div>
             </section>
@@ -84,49 +88,48 @@
             <section class="academics">
                 <h2>Academic Background</h2>
                 <div class="college">
-                    <label>College or University</label>
-                    <input type="text" required>
+                    <labe for="college">College or University</label>
+                    <input type="text" id="college" required>
                 </div>
                 <div>
-                    <label>Country</label>
-                    <input type="text" required>
+                    <label for="college-country">Country</label>
+                    <input type="text" id="college-country" required>
                 </div>
                 <div class="degree">
                     <div class="major">
-                        <label>Major</label><br>
-                        <input type="text" required>
+                        <label for="major">Major</label><br>
+                        <input type="text" id="major" required>
                     </div>
                     <div>
-                        <label>Cumulative GPA</label><br>
-                        <input type="text" required>
+                        <label for="gpa">Cumulative GPA</label><br>
+                        <input type="text" id="gpa" required>
                     </div>
                 </div>
                 <div>
-                    <label>Graduation Date</label>
-                    <input type="date" required>
+                    <label for="grad-date">Graduation Date</label>
+                    <input type="date" id="grad-date" required>
                 </div>
                 <div>
-                    <label>Your achievements (most recent first)</label><br>
-                    <textarea class="achievements"></textarea>
+                    <label for="achieved">Your achievements (most recent first)</label><br>
+                    <textarea class="achievements" id="achieved"></textarea>
                 </div>
-                
             </section>
 
             <section class="business">
                 <h2>Professional Experience</h2>
                 <div class="skills">
-                    <label>List your skills</label><br>
-                    <textarea class="skills"></textarea>
+                    <label for="pro-skills">List your skills</label><br>
+                    <textarea class="skills" id="pro-skills"></textarea>
                 </div>
                 <h3>Work Experience One</h3>
                 <div class="job-info">
                     <div>
-                        <label>Job Title</label><br>
-                        <input type="text">
+                        <label for="job-title">Job Title</label><br>
+                        <input type="text" id="job-title">
                     </div>
                     <div>
-                        <label>Type of Experience</label><br>
-                        <input type="text" list="experiences">
+                        <label for="exp-type">Type of Experience</label><br>
+                        <input type="text" list="experiences" id="exp-type">
                         <datalist id="experiences">
                             <option>Internship</option>
                             <option>Volunteer Work</option>
@@ -136,27 +139,27 @@
                 </div>
                 <div class="job-dates">
                     <div>
-                        <label>Start Date</label><br>
-                        <input type="date">
+                        <label for="start-date">Start Date</label><br>
+                        <input type="date" id="start-date">
                     </div>
                     <div>
-                        <label>End Date</label><br>
-                        <input type="date">
+                        <label for="end-date">End Date</label><br>
+                        <input type="date" id="end-date">
                     </div>
                 </div>
                 <div class="accomplishments">
-                    <label>Accomplishments</label><br>
-                    <textarea class="work-experience"></textarea>
+                    <label for="accomplished">Accomplishments</label><br>
+                    <textarea class="work-experience" id="accomplished"></textarea>
                 </div>
                 <h3>Work Experience Two</h3>
                 <div class="job-info">
                     <div>
-                        <label>Job Title</label><br>
-                        <input type="text">
+                        <label for="job-title2">Job Title</label><br>
+                        <input type="text" id="job-title2">
                     </div>
                     <div>
-                        <label>Type of Experience</label><br>
-                        <input type="text" list="experiences">
+                        <label for="exp-type2">Type of Experience</label><br>
+                        <input type="text" list="experiences" id="exp-type2">
                         <datalist id="experiences">
                             <option>Internship</option>
                             <option>Volunteer Work</option>
@@ -166,25 +169,25 @@
                 </div>
                 <div class="job-dates">
                 <div>
-                    <label>Start Date</label><br>
-                    <input type="date">
+                    <label for="start-date2">Start Date</label><br>
+                    <input type="date" id="start-date2">
                 </div>
                 <div>
-                    <label>End Date</label><br>
-                    <input type="date">
+                    <label for="end-date2">End Date</label><br>
+                    <input type="date" id="end-date2">
                 </div>
                 </div>
                 <div class="accomplishments">
-                    <label>Accomplishments</label><br>
-                    <textarea class="work-experience"></textarea>
+                    <label for="accomplished2">Accomplishments</label><br>
+                    <textarea class="work-experience" id="accomplished2"></textarea>
                 </div>                
             </section>
 
             <section class="motivation">
                 <h2>Your Motivation</h2>
                 <div class="explain-motivation">
-                    <label>Explain your motivation to join company X in 100 words or less.</label><br>
-                    <textarea class="motivation"></textarea>
+                    <label for="motivation">Explain your motivation to join company X in 100 words or less.</label><br>
+                    <textarea class="motivation" id="motivation"></textarea>
                 </div>
             </section>
 
@@ -196,19 +199,21 @@
                 </p><br>
                 <div class="namedate">
                     <div>
-                        <label>Enter your full name</label><br>
-                        <input type="text" required>
+                        <label for="full-name">Enter your full name</label><br>
+                        <input type="text" id="full-name" required>
                     </div>
                     <div>
-                        <label>Today's Date</label><br>
-                        <input type="date" required>
+                        <label for="today">Today's Date</label><br>
+                        <input type="date" id="today" required>
                     </div>
                 </div>
             </section>
-            <button type="submit">Submit Form</button>
+            <button type="submit" id="submitting">Submit Form</button>
+            <input type="reset" id="reset-form" onclick="resetForm()">
         </form>
     </main>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="index.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <footer>
         <p class="attribution">&copy; 2020 by <a href="https://twitter.com/lolomakuyana">Lorraine Makuyana</a>

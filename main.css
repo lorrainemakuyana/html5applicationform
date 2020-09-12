@@ -58,7 +58,7 @@ textarea {
     line-height: 1.5em;
 }
 
-.personal-details .email input, .personal-details .github-link input, .address .street input{
+.personal-details .email input, .personal-details .github-link input, .address .street input, .personal-details .other-website input{
     width: 50%;    
 }
 
@@ -69,7 +69,7 @@ textarea {
 .personal-details .names div, .personal-details .phone-number div, .address .location div, .academics .degree div, .business .job-dates div {
     width: 50%; 
 }
-.personal-details .github-link {
+.personal-details .github-link, .personal-details .other-website {
     padding-bottom: 10px;
 }
 .personal-details .names input, .personal-details .phone-number input {
@@ -154,6 +154,20 @@ button:focus {
     outline: none;
 }
 
+input[type="reset"] {
+    background-color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+input[type="reset"]:hover {
+    text-decoration: none;
+}
+input[type="reset"]:focus {
+    outline: none;
+}
+
 footer {
     text-align: center; 
     height: 100px; 
@@ -171,6 +185,7 @@ a {
 }
 a:hover {
     color: rgb(0, 0, 255); 
+    text-decoration: underline;
 }
 
 #github {
